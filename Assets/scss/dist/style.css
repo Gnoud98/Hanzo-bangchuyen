@@ -182,10 +182,6 @@
     left: 26px !important;
   }
 
-  .product__home-item img {
-    height: auto !important;
-  }
-
   .list_products .order-type {
     margin-top: 10px;
   }
@@ -243,6 +239,10 @@
 
   .support-fix-mobile ul li a {
     left: 15px !important;
+  }
+
+  .section-2 .category__product-grid .category__product-item .product-view button {
+    padding: 6px 0px !important;
   }
 }
 @media (max-width: 375px) {
@@ -1407,6 +1407,7 @@ body {
 .support-fix.support-fix-mobile {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 999;
   background: #fff;
