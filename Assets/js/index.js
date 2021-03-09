@@ -199,6 +199,9 @@ var newUpdateProduct=function(){
      
      
     },
+    480:{
+       items: 2,
+    },
     600: {
       items: 1,
     
@@ -222,6 +225,9 @@ var newUpdateProduct=function(){
       items: 1,
       
     },
+    480:{
+       items: 2,
+    },
     600: {
       items: 3,
      
@@ -243,6 +249,9 @@ $('#owl-carousel3').owlCarousel({
     0: {
       items: 1,
      
+    },
+    480:{
+       items: 2,
     },
     600: {
       items: 3,
@@ -266,6 +275,9 @@ $('#owl-carousel4').owlCarousel({
       items: 1,
      
     },
+    480:{
+       items: 2,
+    },
     600: {
       items: 3,
      
@@ -287,6 +299,9 @@ $('#owl-carousel5').owlCarousel({
     0: {
       items: 1,
       
+    },
+    480:{
+       items: 2,
     },
     600: {
       items: 3,
@@ -310,6 +325,9 @@ $('#news-section').owlCarousel({
       items: 1,
      
     },
+    480:{
+       items: 2,
+    },
     600: {
       items: 2,
      
@@ -331,6 +349,9 @@ $('#partner_slider').owlCarousel({
     0: {
       items: 2,
      
+    },
+    480:{
+       items: 2,
     },
     600: {
       items: 3,

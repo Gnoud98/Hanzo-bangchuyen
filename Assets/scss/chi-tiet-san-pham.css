@@ -97,6 +97,32 @@
 
   .btn-buy .same-btn {
     margin-bottom: 15px; } }
+@media (max-width: 480px) {
+  #header .header__top .header__top-nav .bar-mb {
+    right: 20px !important; }
+
+  #header .header__top .header__top-nav .header__cart {
+    margin-left: 16px !important;
+    margin-bottom: 2px; }
+
+  .section-2 .category__product-grid .category__product-item .product-view {
+    padding: 0 !important; }
+
+  .section-2 .category__product-grid .category__product-item .product-view button {
+    padding: 6px 10px !important; }
+
+  .section-2 .category__product-grid .category__product-item .product-item .product-price {
+    min-width: 78px !important;
+    height: 32px; }
+
+  .section-2 .category__product-grid .category__product-item .product-view button {
+    font-size: 14px; }
+
+  .section-5 .partner__support-list .partner__support-item:not(:last-child) {
+    height: 46px; }
+
+  .support-fix-mobile ul li a {
+    left: 26px !important; } }
 @media (max-width: 414px) {
   #header .header__top .header__top-logo {
     padding: 0 !important; }
@@ -695,15 +721,18 @@ body {
     padding: 5px; }
     .section-2 .category__product-grid .category__product-item .product-view button {
       color: #636363;
-      padding: 8px 15px;
-      margin-right: 5px; }
+      padding: 8px 5px;
+      margin-right: 5px;
+      background: #ffffff; }
       .section-2 .category__product-grid .category__product-item .product-view button:hover {
         background: #139e00;
         color: #ffffff; }
     .section-2 .category__product-grid .category__product-item .product-view button:nth-of-type(2) {
       color: #636363;
-      padding: 8px 25px; }
+      padding: 8px 10px;
+      background: #ffffff; }
       .section-2 .category__product-grid .category__product-item .product-view button:nth-of-type(2):hover {
+        background: #139e00;
         color: #ffffff; }
 .section-2 .category__product .category__product-grid.category__product-list {
   animation: fadeEffect 1s; }
@@ -719,8 +748,6 @@ body {
     .section-2 .category__product .category__product-grid.category__product-list .category__product-item .product-des {
       width: 70%;
       margin-left: 40px; }
-      .section-2 .category__product .category__product-grid.category__product-list .category__product-item .product-des .product-view {
-        justify-content: unset !important; }
 
 .featured__news-list .featured__news-item {
   margin: 10px 0; }

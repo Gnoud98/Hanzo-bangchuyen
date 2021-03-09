@@ -187,6 +187,9 @@ var FUNCTION = function () {
         0: {
           items: 1
         },
+        480: {
+          items: 2
+        },
         600: {
           items: 1
         },
@@ -206,6 +209,9 @@ var FUNCTION = function () {
       responsive: {
         0: {
           items: 1
+        },
+        480: {
+          items: 2
         },
         600: {
           items: 3
@@ -227,6 +233,9 @@ var FUNCTION = function () {
         0: {
           items: 1
         },
+        480: {
+          items: 2
+        },
         600: {
           items: 3
         },
@@ -246,6 +255,9 @@ var FUNCTION = function () {
       responsive: {
         0: {
           items: 1
+        },
+        480: {
+          items: 2
         },
         600: {
           items: 3
@@ -267,6 +279,9 @@ var FUNCTION = function () {
         0: {
           items: 1
         },
+        480: {
+          items: 2
+        },
         600: {
           items: 3
         },
@@ -287,6 +302,9 @@ var FUNCTION = function () {
         0: {
           items: 1
         },
+        480: {
+          items: 2
+        },
         600: {
           items: 2
         },
@@ -305,6 +323,9 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
+          items: 2
+        },
+        480: {
           items: 2
         },
         600: {
