@@ -108,7 +108,10 @@
     margin-left: 42px; }
 
   .list_products .order-type {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .section-2 .collection__home h1::after {
+    margin: 6px 0 30px !important; } }
 @media (max-width: 480px) {
   #header .header__top .header__top-nav .bar-mb {
     right: 20px; }
@@ -137,10 +140,7 @@
     left: 26px !important; }
 
   .list_products .order-type {
-    margin-top: 10px; }
-
-  .section-2 .collection__home h1::after {
-    margin: 6px 0 30px !important; } }
+    margin-top: 10px; } }
 @media (max-width: 414px) {
   #header .header__top .header__top-logo {
     padding: 0 !important; }
@@ -181,7 +181,7 @@
       margin: 0 !important; }
 
   .support-fix-mobile ul li a {
-    left: 15px !important; }
+    left: 25px !important; }
 
   .section-2 .category__product-grid .category__product-item .product-view button {
     padding: 6px 0px !important; }
@@ -1435,14 +1435,14 @@ body {
   width: 100%; }
 
 /* News slider*/
-.holder {
+.featured__news-list {
   width: 100%;
   height: 500px;
   overflow: hidden;
   padding: 10px;
   font-family: Helvetica; }
 
-.holder .mask {
+.featured__news-list .mask {
   position: relative;
   left: 0px;
   top: 10px;
@@ -1450,28 +1450,28 @@ body {
   height: auto;
   overflow: hidden; }
 
-.holder ul {
+.featured__news-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative; }
 
-.holder ul li {
+.featured__news-list ul li {
   padding: 10px 0px;
   display: flex; }
-  .holder ul li .news-img {
+  .featured__news-list ul li .news-img {
     width: 40%; }
-    .holder ul li .news-img img {
+    .featured__news-list ul li .news-img img {
       width: 100%;
       padding: 5px; }
-  .holder ul li .new-title {
+  .featured__news-list ul li .new-title {
     width: 60%;
     padding: 5px; }
-    .holder ul li .new-title a {
+    .featured__news-list ul li .new-title a {
       font-size: 14px;
       color: #333333;
       line-height: 1.3; }
-      .holder ul li .new-title a:hover {
+      .featured__news-list ul li .new-title a:hover {
         color: #000000; }
 
 #back-to-top span {

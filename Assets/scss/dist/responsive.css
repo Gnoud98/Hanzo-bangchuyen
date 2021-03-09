@@ -144,6 +144,10 @@
   .list_products .order-type {
     margin-top: 10px;
   }
+
+  .section-2 .collection__home h1::after {
+    margin: 6px 0 30px !important;
+  }
 }
 @media (max-width: 480px) {
   #header .header__top .header__top-nav .bar-mb {
@@ -182,10 +186,6 @@
 
   .list_products .order-type {
     margin-top: 10px;
-  }
-
-  .section-2 .collection__home h1::after {
-    margin: 6px 0 30px !important;
   }
 }
 @media (max-width: 414px) {
@@ -240,7 +240,7 @@
   }
 
   .support-fix-mobile ul li a {
-    left: 15px !important;
+    left: 25px !important;
   }
 
   .section-2 .category__product-grid .category__product-item .product-view button {

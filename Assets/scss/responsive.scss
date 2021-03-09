@@ -207,6 +207,9 @@
             margin-top: 10px;
         }
     }
+    .section-2 .collection__home h1::after {
+        margin: 6px 0 30px !important;
+    }
 }
 @media (max-width: 480px) {
     #header .header__top .header__top-nav .bar-mb {
@@ -245,9 +248,7 @@
             margin-top: 10px;
         }
     }
-    .section-2 .collection__home h1::after {
-        margin: 6px 0 30px !important;
-    }
+  
 }
 
 @media (max-width: 414px) {
@@ -309,7 +310,7 @@
         ul {
             li {
                 a {
-                    left: 15px !important;
+                    left: 25px !important;
                 }
             }
         }
