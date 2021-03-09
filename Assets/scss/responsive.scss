@@ -237,7 +237,7 @@
     }
     .product__home-item{
         img{
-            height:auto !important;
+           // height:auto !important;
         }
     }
     .list_products{
@@ -310,6 +310,9 @@
                 }
             }
         }
+    }
+    .section-2 .category__product-grid .category__product-item .product-view button {
+        padding: 6px 0px !important;
     }
 }
 @media (max-width: 375px) {
