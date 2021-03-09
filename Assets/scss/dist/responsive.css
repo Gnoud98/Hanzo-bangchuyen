@@ -183,6 +183,10 @@
   .list_products .order-type {
     margin-top: 10px;
   }
+
+  .section-2 .collection__home h1::after {
+    margin: 6px 0 30px !important;
+  }
 }
 @media (max-width: 414px) {
   #header .header__top .header__top-logo {
@@ -192,8 +196,8 @@
     width: 55px;
   }
   #header .header__top .header__top-search form input:first-child {
-    width: 86%;
-    margin-left: 14px;
+    width: 94%;
+    margin-left: 11px;
   }
   #header .header__top .header__top-search form button {
     right: 10px;
@@ -241,6 +245,11 @@
 
   .section-2 .category__product-grid .category__product-item .product-view button {
     padding: 6px 0px !important;
+  }
+
+  .section-2 .collection__home .title-heading {
+    padding: 0px 15px !important;
+    line-height: 1.5;
   }
 }
 @media (max-width: 375px) {
