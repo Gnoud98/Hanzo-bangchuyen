@@ -125,6 +125,20 @@ var FUNCTION = function () {
     });
   };
 
+  var support_fix_mobile = function support_fix_mobile() {
+    (function ($) {
+      var $window = $(window),
+          $nav_fixed_mobile = $('.support-fix');
+      $window.resize(function resize() {
+        if ($window.width() <= 768) {
+          return $nav_fixed_mobile.addClass('support-fix-mobile');
+        } else {
+          $nav_fixed_mobile.removeClass('support-fix-mobile');
+        }
+      }).trigger('resize');
+    })(jQuery);
+  };
+
   var back_top = function back_top() {
     var btn = $('#back-to-top');
     $(window).scroll(function () {
@@ -142,6 +156,24 @@ var FUNCTION = function () {
     });
   };
 
+  var collapse = function collapse() {
+    $('.expand-button').on('click', function () {
+      $('.product_content-description').toggleClass('-expanded');
+
+      if ($('.product_content-description').hasClass('-expanded')) {
+        $('.expand-button').html('Thu gọn');
+      } else {
+        $('.expand-button').html('Xem thêm');
+      }
+    });
+  };
+
+  var zoomImg = function zoomImg() {
+    $(document).ready(function () {
+      $('.zoom-img').zoom();
+    });
+  };
+
   var newUpdateProduct = function newUpdateProduct() {
     $('#owl-carousel1').owlCarousel({
       loop: true,
@@ -153,10 +185,10 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
-          items: 3
+          items: 1
         },
         1000: {
           items: 5
@@ -173,7 +205,7 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
           items: 3
@@ -193,7 +225,7 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
           items: 3
@@ -213,7 +245,7 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
           items: 3
@@ -233,7 +265,7 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
           items: 3
@@ -253,7 +285,7 @@ var FUNCTION = function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
           items: 2
@@ -289,10 +321,12 @@ var FUNCTION = function () {
     _: function _() {
       home_slider(); //features_news()
 
-      newUpdateProduct();
       menu_mb();
+      newUpdateProduct();
       view_mode();
       back_top();
+      support_fix_mobile();
+      collapse();
     }
   };
 }();
@@ -300,15 +334,3 @@ var FUNCTION = function () {
 $(function () {
   FUNCTION._();
 });
-
-(function ($) {
-  var $window = $(window),
-      $nav_fixed_mobile = $('.support-fix');
-  $window.resize(function resize() {
-    if ($window.width() <= 768) {
-      return $nav_fixed_mobile.addClass('support-fix-mobile');
-    } else {
-      $nav_fixed_mobile.removeClass('support-fix-mobile');
-    }
-  }).trigger('resize');
-})(jQuery);

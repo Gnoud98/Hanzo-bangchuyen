@@ -1,6 +1,6 @@
 var FUNCTION = (function () {
-   var home_slider=function(){
-$(document).ready(function() {
+ var home_slider=function(){
+  $(document).ready(function() {
   var sync1 = $("#sync1");
   var sync2 = $("#sync2");
   var slidesPerPage = 5;
@@ -132,6 +132,22 @@ $(".grid-mode").click(function(){
 });
 }
 
+var support_fix_mobile=function () {
+  (function($) {
+    var $window = $(window),
+        $nav_fixed_mobile = $('.support-fix');
+    $window.resize(function resize() {
+        if ($window.width() <= 768) {
+            return $nav_fixed_mobile.addClass('support-fix-mobile');
+        }else
+        {
+            $nav_fixed_mobile.removeClass('support-fix-mobile');
+        }   
+    }).trigger('resize');
+})(jQuery);
+  
+}
+
 var back_top=function () {
   var btn = $('#back-to-top');
 
@@ -149,10 +165,24 @@ btn.on('click', function(e) {
 });
 }
 
+var collapse=function () {
+  $('.expand-button').on('click', function(){
+  $('.product_content-description').toggleClass('-expanded');
+  
+  if ($('.product_content-description').hasClass('-expanded')) {
+    $('.expand-button').html('Thu gọn');
+  } else {
+    $('.expand-button').html('Xem thêm');
+  }
+});
+}
 
-
-
-
+var zoomImg= function(){
+  
+		$(document).ready(function(){
+			$('.zoom-img').zoom();
+		});
+}
 
 var newUpdateProduct=function(){
   $('#owl-carousel1').owlCarousel({
@@ -165,12 +195,12 @@ var newUpdateProduct=function(){
   responsiveClass: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
      
      
     },
     600: {
-      items: 3,
+      items: 1,
     
      
     },
@@ -189,7 +219,7 @@ var newUpdateProduct=function(){
   responsiveClass: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
       
     },
     600: {
@@ -211,7 +241,7 @@ $('#owl-carousel3').owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
      
     },
     600: {
@@ -233,7 +263,7 @@ $('#owl-carousel4').owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
      
     },
     600: {
@@ -255,7 +285,7 @@ $('#owl-carousel5').owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
       
     },
     600: {
@@ -277,7 +307,7 @@ $('#news-section').owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
      
     },
     600: {
@@ -315,12 +345,14 @@ $('#partner_slider').owlCarousel({
 }
 return {
     _: function () {
-        home_slider()
-        //features_news()
-     newUpdateProduct()
-     menu_mb()
-     view_mode()
-     back_top()
+          home_slider()
+          //features_news()
+          menu_mb()
+          newUpdateProduct()
+          view_mode()
+          back_top()
+          support_fix_mobile()
+          collapse()
     }
   }
 })();
@@ -328,16 +360,3 @@ $(function () {
   FUNCTION._()
 });
 
-
-(function($) {
-    var $window = $(window),
-        $nav_fixed_mobile = $('.support-fix');
-    $window.resize(function resize() {
-        if ($window.width() <= 768) {
-            return $nav_fixed_mobile.addClass('support-fix-mobile');
-        }else
-        {
-            $nav_fixed_mobile.removeClass('support-fix-mobile');
-        }   
-    }).trigger('resize');
-})(jQuery);

@@ -1366,3 +1366,6 @@ body {
     line-height: 1.5; }
 .box__news .comment-BE img {
   width: 100%; }
+
+#back-to-top span {
+  top: 10px; }

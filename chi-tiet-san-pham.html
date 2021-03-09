@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/js/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/scss/chi-tiet-san-pham.css">
+    <link rel="stylesheet" href="Assets/scss/bootstrap.min.css">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <header id="header" class="sticky-top">
+        <div class="header__top news-post">
+            <div class="container custom-height">
+                <div class="row">
+                    <div class="header__top-logo col-lg-1 col-md-1 col-1">
+                        <a href="index.html">
+                            <img src="Assets/img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__top-search col-lg-4 col-md-8 col-8">
+                        <form action="" class="header__top-search-form">
+                            <input type="search" placeholder="Bạn tìm gì ?">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input type="hidden" name="post_type" value="product">
+                        </form>
+                    </div>
+                    <div class="header__top-nav col-lg-3 col-md-3 col-3 d-flex justify-center align-items-center">
+                        <div class="row">
+                            <div
+                                class="header__list-store col-lg-4 col-6 text-center d-lg-block d-md-block d-sm-block d-none">
+                                <a href="#">
+                                    Hệ thống chi nhánh
+                                </a>
+                            </div>
+                            <div class="header__cart col-2 p-0">
+                                <a href="">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                            <div class="bar-mb">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="header__about col-6 d-lg-inline d-none">
+                                <a href="#">
+                                    Về COSMO
+                                </a>
+                            </div>
+                            <div class="menu-mb d-lg-none">
+                                <div class="overlay"></div>
+                                <div class="menu-wrapper">
+                                    <span class="close-btn" id="close-btn">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <div class="menu-mb-body">
+                                        <ul id="list__menu-mb">
+                                            <li class="menu-item">
+                                                <a href="bang-tai.html">
+                                                    <img src="Assets/img/conveyor-1-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Băng tải</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="bang-chuyen.html">
+                                                    <img src="Assets/img/delivery-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Băng chuyền</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="gia-cong-co-khi.html">
+                                                    <img src="Assets/img/conveyor-belt-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Gia công cơ khí chính xác</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="he-thong-bang-tai.html">
+                                                    <img src="Assets/img/icon-nha-bep-04-36x36-1.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Hệ thống băng tải</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="du-an.html">
+                                                    <img src="Assets/img/layers-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Dự án</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="chi-tiet-tin-tuc.html">
+                                                    <img src="Assets/img/icon-nha-bep-02-36x36-1-1.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Tin tức</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="bottom_option">
+                                            Gọi mua hàng:
+                                            <span>
+                                                <a href="">
+                                                    <i class="fas fa-phone-square-alt"></i>
+                                                    0123456789
+                                                </a>
+                                                (07h30 - 21h30)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__top-menu col-lg-4 d-lg-flex d-none align-items-center justify-content-end ">
+                        <div class="row">
+                            <li class="hotline col-lg-6 text-right">
+                                <a href="tel:0123456789"> 0123456789
+
+                                </a>
+                                <span>Tổng đài đặt hàng</span>
+                            </li>
+                            <li class="news col-lg-6">
+                                <a href="#">
+                                    Kinh nghiệm hay
+                                </a>
+                                <span>
+                                    Khuyến mãi
+                                </span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                <ul class=" news__items shadow">
+                                    <li>
+                                        <a href="">Tư vấn</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Khuyến mãi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__main-list">
+                    <ul class="header__main-list-items d-flex justify-content-lg-start">
+                        <li class="menu-item-has-children">
+                            <a href="bang-tai.html">
+                                <img src="Assets/img/conveyor-1-36x36.png" alt="" class="menu-img">
+                                <span>Băng tải</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="bang-chuyen.html">
+                                <img src="Assets/img/delivery-36x36.png" alt="" class="menu-img">
+                                <span>Băng chuyền</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="he-thong-bang-tai.html">
+                                <img src="Assets/img/conveyor-belt-36x36.png" alt="" class="menu-img">
+                                <span>Hệ thống băng tải</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="gia-cong-co-khi.html">
+                                <i class="fas fa-wrench"></i>
+                                <span>Gia công cơ khí chính xác</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="du-an.html">
+                                <img src="Assets/img/conveyor-1-36x36.png" alt="" class="menu-img">
+                                <span>Dự án</span>
+                            </a>
+                            <ul class="sub-menu">
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
+                        <p>
+                            <a href="index.html"><i class="fas fa-home"></i>Trang chủ</a>
+                            <span class="separator"> / </span>
+                            <a href="">Sản phẩm</a>
+                            <span class="separator"> / </span>
+                            <span class="last">CON LĂN BĂNG TẢI CÔNG NGHIỆP</span>
+                        </p>
+                    </nav>
+                </div>
+                <div class="title-product">
+                    <h1>Con Lăn Băng Tải Công Nghiệp</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content__product">
+            <div class="container">
+                <div id="product" class="product__item">
+                    <div class="product__item-header">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 col-12">
+                                <div class="zoom-img" id="produto">
+                                    <img src="Assets/img/42-scaled.jpg" height="400px" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-12" id="product-price-top">
+                                <div class="product__item-info">
+                                    <div class="contact-info">
+                                        <span>Liên hệ</span>
+                                    </div>
+                                    <div class="code-info">
+                                        <span>
+                                            Mã SKU :N/A
+                                        </span>
+                                        <div class="item">
+                                            Danh mục:
+                                            <a href="">Uncategorized</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-quote">
+                                        Sản phẩm đã có trong danh sách báo giá
+                                    </div>
+                                    <div class="product-view-price">
+                                        <a href="" data-toggle="modal" data-target="#price-btn">
+                                            Xem danh sách báo giá sản phẩm
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="share_socials d-flex align-items-center">
+                                    <div class="capt">Chia sẻ ngay</div>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                                        <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12 col-12 d-lg-block d-none">
+                                <div class="contact-detail">
+                                    <div class="contact-detail-phone">
+                                        <span> GỌI ĐẶT HÀNG NGAY</span>
+
+                                    </div>
+                                    <div class="hotline">
+                                        <a href="tel:0123456789">
+                                            <i class="fas fa-phone-volume"></i>
+                                            0123456789
+                                        </a>
+                                        <span>( 07h30 - 21h30 )</span>
+                                    </div>
+                                </div>
+                                <div class="showrooms">
+                                    <div class="showrooms-item">
+                                        <div class="showrooms-item-title d-flex">
+                                            <img src="Assets/img/icon_sao.png" alt="">
+                                            COSMOVINA
+                                        </div>
+                                        <span class="showrooms-item-local">
+                                            VP Hà Nội: Số 06, Phố An Sinh, P.Cổ Nhuế 1, Q.Bắc Từ Liêm, Hà Nội, Việt Nam.
+                                        </span>
+                                    </div>
+                                    <div class="showrooms-item">
+                                        <div class="showrooms-item-title d-flex">
+                                            <img src="Assets/img/icon_sao.png" alt="">
+                                            COSMOVINA
+                                        </div>
+                                        <span class="showrooms-item-local">
+                                            Nhà xưởng: Khu nghiên cứu và Triển khai công nghệ Cổ Nhuế, P.Cổ Nhuế 2,
+                                            Q.Bắc Từ Liêm, Hà nội.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 col-12">
+                                <div class="product_content-description">
+                                    <p class="first_content">CON LĂN BĂNG TẢI CÔNG NGHIỆP
+                                        Con lăn băng tải là gì? <br>
+                                        Con lăn băng tải công nghiệp là một bộ phận quan trọng của bất cứ hệ thống băng
+                                        tải nào. <br>
+                                        Yếu tố kỹ thuật quan trọng nhất của con lăn là đạt độ đồng tâm và độ quay trơn
+                                        đều của con lăn. Đường kính con lăn được tính toán phù hợp với tải trọng mà nó
+                                        phục vụ. Độ đồng tâm của mọi con lăn trên toàn hệ thống băng tải cần phải gần
+                                        như là như nhau. <br>
+                                        Với kỹ thuật hiện đại cộng với khả năng của các máy tiện CNC công nghệ cao, con
+                                        lăn Matech Việt Nam còn được thiết kế có chức năng mới là “tự điều chỉnh dây
+                                        băng” trong băng tải PVC-băng tải PU.
+                                        Vật liệu cấu tạo con lăn băng tải công nghiệp tùy thuộc vào vật liệu tải của nó,
+                                        nhu cầu của người mua hàng bao gồm các loại: thép sơn, thép mạ kẽm, nhôm, inox,
+                                        nhựa, con lăn cước… Tải trọng của mỗi con lăn được thiết kế tính toán theo tải
+                                        trọng trên toàn hệ thống băng tải, từ đó mới lựa chọn loại vật liệu, chiều dày
+                                        ống con lăn, loại ống đúc hay ống hàn, đường kính trục con lăn, loại vòng bi phù
+                                        hợp. <br>
+                                        Trong băng tải PVC , băng tải PU có các loại con lăn:
+                                        – Con lăn chủ động
+                                        – Con lăn bị động cũng là con lăn tăng chỉnh dây băng
+                                        – Con lăn ép dây là con lăn tạo góc ôm băng tải
+                                        – Con lăn đỡ dây băng bên dưới
+                                        – Con lăn đỡ mặt dây bên trên.
+                                        Trong băng tải con lăn có các loại con lăn:
+                                        – Con lăn Băng tải tự do
+                                        – Con lăn truyền động: có truyền động xích và truyền động dây đai răng.</p>
+                                    <p>
+                                        Ngoài những loại con lăn băng tải công nghiệp trên còn có con lăn bọc cao su,
+                                        con lăn vỏ nhựa, con lăn chổi lông cước…
+                                        COSMO thiết kế và sản xuất các loại con lăn công nghiệp theo yêu cầu của từng
+                                        khách hàng khác nhau. Quý khách hàng chỉ cần gửi bản vẽ hoặc thông số con lăn
+                                        cần mua, COSMO sẽ sản xuất theo đúng yêu cầu của Quý khách hàng
+                                    </p>
+                                    <p>Ngoài những loại con lăn băng tải công nghiệp trên còn có con lăn bọc cao su,
+                                        con lăn vỏ nhựa, con lăn chổi lông cước…
+                                        COSMO thiết kế và sản xuất các loại con lăn công nghiệp theo yêu cầu của từng
+                                        khách hàng khác nhau. Quý khách hàng chỉ cần gửi bản vẽ hoặc thông số con lăn
+                                        cần mua, COSMO sẽ sản xuất theo đúng yêu cầu của Quý khách hàng</p>
+                                </div>
+                                <button class="expand-button">
+                                    Xem thêm
+                                </button>
+                                <div class="product-order">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-12">
+                                            <div class="product-info d-flex">
+                                                <div class="pro-img">
+                                                    <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                </div>
+                                                <div class="pro-name">
+                                                    <h4>
+                                                        Con Lăn Băng Tải Công Nghiệp
+                                                    </h4>
+                                                    <div class="pro-price">
+                                                        Liên hệ
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-12">
+                                            <div class="btn-buy">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-12 price-btn same-btn">
+                                                        <a href="" data-toggle="modal" data-target="#price-btn">Báo giá
+                                                            ngay</a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-6 advisory-btn same-btn">
+                                                        <a href="" data-toggle="modal" data-target="#advisory-btn">Tư
+                                                            vấn</a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-6 order-btn same-btn">
+                                                        <a href="" data-toggle="modal" data-target="#order-btn"> Đặt
+                                                            hàng nhanh</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vote-BE">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="img-BE">
+                                                <img src="Assets/img/product-img/img-BE.PNG" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative-product">
+                                    <div class="title-heading">
+                                        <span>Sản phẩm cùng chuyên mục</span>
+                                    </div>
+                                    <div class="category-product">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <div class="product__home-item">
+                                                    <a href="">
+                                                        <img src="Assets/img/product-img/new-update-pro1.png" alt="">
+                                                        <h3>
+                                                            Hệ Thống Băng Tải Đếm Sản Phẩm
+                                                        </h3>
+                                                        <div class="price">
+                                                            <span class="contact text-center">Liên Hệ</span>
+                                                        </div>
+                                                    </a>
+                                                    <span class="tag-hot">Hot</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-lg-block d-md-none">
+                                <div class="news__post">
+                                    <div class="news__post-title">
+                                        <h2>
+                                            <a href="">Tin Tức Mới</a>
+                                        </h2>
+                                    </div>
+                                    <ul class="news__post-item">
+                                        <li><a href="" class="clearfix">
+                                                <img src="Assets/img/news-img1.jpg" alt="">
+                                                <h4>Cảnh Báo : Hàng Giá Rẻ</h4>
+                                                <span>02/03/2021</span>
+                                            </a></li>
+                                        <li><a href="" class="clearfix">
+                                                <img src="Assets/img/news-img2.jpg" alt="">
+                                                <h4>Thông báo lịch nghỉ tết nguyên đán 2021</h4>
+                                                <span>02/03/2021</span>
+                                            </a></li>
+                                        <li><a href="" class="clearfix">
+                                                <img src="Assets/img/news-img3.png" alt="">
+                                                <h4>Băng tải cao su Cosmovina – sự lựa chọn hoàn hảo cho dây chuyền sản
+                                                    xuất
+                                                </h4>
+                                                <span>02/03/2021</span>
+                                            </a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section-5 mt-5">
+                    <div class="partner__support">
+                        <div class="partner__support-list d-lg-flex">
+
+                            <div class="partner__support-item">
+                                <span>
+                                    <img src="Assets/img/icon1.png" alt="">
+                                    Hỗ trợ vận chuyển
+                                </span>
+                            </div>
+                            <div class="partner__support-item">
+                                <span>
+                                    <img src="Assets/img/icon2.png" alt="">
+                                    Hỗ trợ 24/7
+                                </span>
+                            </div>
+                            <div class="partner__support-item">
+                                <span>
+                                    <img src="Assets/img/icon3.png" alt="">
+                                    Thanh toán bảo mật
+                                </span>
+                            </div>
+                            <div class="partner__support-item partner__large">
+                                <span>
+                                    <img src="Assets/img/icon4.png" alt="">
+                                </span>
+                                <span>
+                                    <p> Đăng ký tư vấn từ Mosco</p>
+                                    <div class="phone-support">
+                                        <form action="">
+                                            <input type="text" placeholder="Nhập số diện thoại">
+                                            <button type="submit">Đăng ký</button>
+                                        </form>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="secction-6 brand__slider mt-2">
+                    <div class="brand__slider-heading mb-5">
+                        <h2 class="heading-title">
+                            <b></b>
+                            <span>đối tác chiến lược</span>
+                            <b></b>
+                        </h2>
+                        <p class="title-bt">“Uy tín - Chất lượng - Giá trị – Đóng góp vào thành công của khách hàng”</p>
+
+                    </div>
+
+
+                    <div class="brand__partner">
+
+                        <div class="partner__slider-list owl-carousel owl-theme" id="partner_slider">
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/0068783ff13e02605b2f.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/22c5c8716d0f9e51c71e-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/4e41daf57f8b8cd5d59a-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/56d7ac63091dfa43a30c-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/6420809325edd6b38ffc-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="about-us col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-star"></i>
+                                Về chúng tôi
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <ul>
+                                <li><a href="">Giới thiệu công ty</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                                <li><a href="">Hướng dẫn mua hàng và thanh toán</a></li>
+                                <li><a href="">Bản đồ chỉ đường</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="support col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-user"></i>
+                                Hỗ trợ khách hàng
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <p>
+                                <strong>
+                                    Hotline:
+                                    <a href="">0932 488 998</a>
+                                </strong>
+                                (1000đ/phút, 7h30 ÷ 21h30 kể cả T7, CN) <br>
+                                Đặt hàng : <a href="mailto:sales@cosmovina.com.vn">sales@cosmovina.com.vn</a>
+                            </p>
+                            <p>
+                                <strong>
+                                    Trung tâm CSKH: <a href="tel:0932 488 998">0932 488 998</a>
+                                </strong>
+                                (1000đ/phút, 24h / 7 ngày) <br>
+                                Hỗ trợ: <a href="mailto:sales@cosmovina.com.vn">sales@cosmovina.com.vn</a> <br>
+                                Phản ánh: <a href="mailto:cskh@cosmovia.com.vn">cskh@cosmovia.com.vn</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="payment col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-check"></i>
+                                Hỗ trợ thanh toán
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/visa.svg"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/mastercard.svg"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/jcb.svg"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/2020/04/vnpay.png"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/internet-banking.svg"
+                                        alt="Thanh toán chuyển khoản internet banking" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/cash.svg"
+                                        alt="Thanh toán tiền mặt" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/installment.svg"
+                                        alt="Hỗ trợ trả góp 0%" width="54" height="33">
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="social col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fab fa-facebook-f"></i>
+                                Kết nối với chúng tôi
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-social">
+                                <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-tumblr"></i></a>
+                                <a href=""><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                                <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-3">
+                <div class="row">
+                    <div class="col-lg-7 col-12 address-ft">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Địa chỉ
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <p>
+                                <strong>
+                                    ® HEAD OFFICE:
+                                </strong>
+                                Số 06, Phố An Sinh, P.Cổ Nhuế 1, Q.Bắc Từ Liêm, Hà Nội, Việt Nam.
+                                <br>
+                                <strong style="color: #ff0000;">
+                                    ☎ Hotline: <a href="tel:0123456789">0123456789</a>
+                                </strong>
+                            </p>
+                            <p>
+                                <strong>
+                                    ® NHÀ XƯỞNG:
+                                </strong>
+                                Khu nghiên cứu và Triển khai công nghệ Cổ Nhuế, P.Cổ Nhuế 2, Q.Bắc Từ Liêm, Hà nội.
+                                <br>
+                                <strong>
+                                    ☎ Hotline: <a href="tel:0123456789">0123456789</a>
+                                </strong>
+                            </p>
+                            <p>&nbsp;</p>
+
+                            <p>
+                                <em>Cosmo nhận đặt hàng trực tuyến và giao hàng tận nơi cho khách hàng</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 maintain-ft">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-map-marker-alt"></i>
+                                ĐỊA CHỈ GỬI HÀNG ĐỔI TRẢ & BẢO HÀNH
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <p>Khách hàng có thể gửi sản phẩm bảo hành, đổi trả về địa chỉ văn phòng của COSMO tại Hà
+                                Nội hoặc giao, nhận trực tiếp tại văn phòng đối tác của chúng tôi chỉ định. Quý khách
+                                vui lòng gọi điện trước khi gửi để tránh thất lạc hàng hóa.</p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <em>(Đăng ký tư vấn hoặc liên hệ&nbsp;<span><strong>Trung tâm bảo
+                                            hành &amp; CSKH: <a
+                                                href="tel:02466886686">0246-688-6686</a>&nbsp;</strong></span>để được hỗ
+                                    trợ thêm).</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coppy__right">
+                <div class="row">
+                    <div class="coppy__right-item-left col-lg-10 col-md-10 col-8">
+                        <div class="coppy__right-content">
+                            <p>
+                                <strong>Copyright 2020 ©&nbsp;<a href="">Cosmo Viet Nam Co., Ltd</a></strong>
+                            </p>
+                            <p class="d-xs-none">Giấy phép đăng ký kinh doanh số 0105 993 066 do sở KHĐT TP Hà Nội cấp
+                                ngày 18/9/2012</p>
+                        </div>
+                    </div>
+                    <div class="coppy__right-item-img col-lg-2 col-md-2 col-4 d-none d-lg-block">
+                        <img src="Assets/img/partner-img/logoSaleNoti-300x114-1-220x84-1.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="support-fix">
+        <ul>
+            <li class="support-fix__home">
+                <a href="">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/home.svg" alt="">
+                </a>
+                <span>Trang chủ</span>
+            </li>
+
+            <li class="support-fix__phone modal-toggle">
+                <a href="" data-toggle="modal" data-target="#myModal">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/call.png" alt="">
+                </a>
+                <span style="color: #ff0000;">
+                    Hotline:0123456789
+                </span>
+            </li>
+            <li class="support-fix__zalo">
+                <a href="">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/zalo.png" alt="">
+                </a>
+                <span>Tư vấn qua Zalo</span>
+            </li>
+            <li class="support-fix__fb">
+                <a href="">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/mes.png" alt="">
+                </a>
+                <span>Tư vấn qua Facebook</span>
+            </li>
+        </ul>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        Hãy gọi ngay cho Cosmo để đặt hàng và nhận những tư vấn tốt nhất về sản phẩm và dịch vụ
+                    </p>
+                    <a href="tel:0123456789" class="text-center d-block font-weight-bold">0123456789</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="advisory-btn" tabindex="-1" role="dialog" aria-labelledby="advisory-btn"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Yêu cầu tư vấn</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Chào bạn! Nếu bạn đang cần tư vấn về sản phẩm và dịch vụ, hãy để lại số điện thoại. Chúng tôi sẽ
+                        gọi lại cho bạn ngay!</p>
+                    <div class="form-group">
+                        <span class="name_user">
+                            <input type="text" placeholder="Nhập họ và tên của bạn" required>
+                        </span>
+
+                    </div>
+                    <div class="form-group">
+                        <span class="phone_user">
+                            <input type="text" placeholder="Nhập số điện thoại (bắt buộc)" required>
+                        </span>
+                    </div>
+                    <div class="form-button">
+                        <input type="submit" value="Gọi ngay cho tôi">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="order-btn" tabindex="-1" role="dialog" aria-labelledby="order-btn" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="height: 600px;">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Đặt mua hàng</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Cảm ơn bạn đã ghé thăm trang web của Cosmovina! Vui lòng điền đầy đủ thông tin mua hàng theo form
+                        dưới đây để chúng tôi phục vụ bạn được tốt nhất.</p>
+                    <div class="form-group">
+                        <span class="name_user">
+                            <input type="text" placeholder="Nhập họ và tên của bạn" required>
+                        </span>
+
+                    </div>
+                    <div class="form-group">
+                        <span class="phone_user">
+                            <input type="text" placeholder="Nhập số điện thoại (bắt buộc)" required>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="address_user">
+                            <input type="text" placeholder="Địa chỉ" required>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="mount_user">
+                            <input type="text" placeholder="Số lượng cần mua" required>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="address_user">
+                            <textarea name="" id="" cols="40" rows="4" placeholder="Ghi chú"></textarea>
+                        </span>
+                    </div>
+                    <div class="form-button">
+                        <input type="submit" value="Đặt mua ngay">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="price-btn" tabindex="-1" role="dialog" aria-labelledby="price-btn" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Nhập thông tin báo giá</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <form action="">
+                                <table class="shop_table cart">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove"></th>
+                                            <th class="product-name" colspan="2">Sản phẩm</th>
+                                            <th class="product-quantity">Số lượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-remove">
+                                                <a href="">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </td>
+                                            <td class="product-thumbnail">
+                                                <a href="">
+                                                    <img src="Assets/img/product-img/new-update-pro2.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="product-name">
+                                                <a href="">
+                                                    Con Lăn Băng Tải Công Nghiệp
+                                                </a>
+                                            </td>
+                                            <td class="product-quantity">
+                                                <div class="quantity">
+                                                    <input type="number" inputmode="numeric" value="1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="info-order">
+                                <p>
+                                    Cảm ơn bạn đã ghé thăm trang web của Cosmovina! Vui lòng điền đầy đủ thông tin báo
+                                    giá theo form dưới đây để chúng tôi phục vụ bạn được tốt nhất.
+                                </p>
+                            </div>
+                            <form action="">
+                                <div class="name-user">
+                                    <label for="name">Họ và tên
+                                       <span>*</span>
+                                    </label>
+                                    <input type="text" name="name" class="input-text">
+                                </div>
+                                <div class="phone-user">
+                                    <label for="phone">Số điện thoại
+                                       <span>*</span>
+                                    </label>
+                                    <input type="text" name="phone">
+                                </div>
+                                <div class="address-user">
+                                    <label for="address">Địa chỉ(tuỳ chọn)</label>
+                                    <input type="text" name="address">
+                                </div>
+                                <div class="note-user">
+                                    <label for="note">Ghi chú(tuỳ chọn)</label>
+                                    <textarea name="" id="" cols="5" rows="2"></textarea>
+                                </div>
+                                <button type="submit">Yêu cầu báo giá</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="back-to-top">
+        <span>▲</span>
+    </div>
+
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/jquery.zoom.min.js"></script>
+    <script src="Assets/js/owl.carousel.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/index.js"></script>
+</body>
+
+</html>

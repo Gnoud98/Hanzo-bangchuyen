@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/js/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/scss/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/scss/style.css">
+    <title>Chi tiết tin tức</title>
+</head>
+
+<body>
+    <header id="header" class="sticky-top">
+        <div class="header__top news-post">
+            <div class="container custom-height">
+                <div class="row">
+                    <div class="header__top-logo col-lg-1 col-md-1 col-1">
+                        <a href="index.html">
+                            <img src="Assets/img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__top-search col-lg-4 col-md-8 col-8">
+                        <form action="" class="header__top-search-form">
+                            <input type="search" placeholder="Bạn tìm gì ?">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input type="hidden" name="post_type" value="product">
+                        </form>
+                    </div>
+                    <div class="header__top-nav col-lg-3 col-md-3 col-3 d-flex justify-center align-items-center">
+                        <div class="row">
+                            <div class="header__list-store col-lg-4 col-6 text-center d-lg-block d-md-block d-sm-block d-none">
+                                <a href="#">
+                                    Hệ thống chi nhánh
+                                </a>
+                            </div>
+                            <div class="header__cart col-2 p-0">
+                                <a href="">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                            <div class="bar-mb">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="header__about col-6 d-lg-inline d-none">
+                                <a href="#">
+                                    Về COSMO
+                                </a>
+                            </div>
+                            <div class="menu-mb d-lg-none">
+                                <div class="overlay"></div>
+                                <div class="menu-wrapper">
+                                    <span class="close-btn" id="close-btn">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <div class="menu-mb-body">
+                                        <ul id="list__menu-mb">
+                                            <li class="menu-item">
+                                                <a href="bang-tai.html">
+                                                    <img src="Assets/img/conveyor-1-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Băng tải</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="bang-chuyen.html">
+                                                    <img src="Assets/img/delivery-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Băng chuyền</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="gia-cong-co-khi.html">
+                                                    <img src="Assets/img/conveyor-belt-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Gia công cơ khí chính xác</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="he-thong-bang-tai.html">
+                                                    <img src="Assets/img/icon-nha-bep-04-36x36-1.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Hệ thống băng tải</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="du-an.html">
+                                                    <img src="Assets/img/layers-36x36.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Dự án</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="chi-tiet-tin-tuc.html">
+                                                    <img src="Assets/img/icon-nha-bep-02-36x36-1-1.png" alt="">
+                                                    <div class="responsive">
+                                                        <span>Tin tức</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="bottom_option">
+                                            Gọi mua hàng:
+                                            <span>
+                                                <a href="">
+                                                    <i class="fas fa-phone-square-alt"></i>
+                                                    0123456789
+                                                </a>
+                                                (07h30 - 21h30)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__top-menu col-lg-4 d-lg-flex d-none align-items-center justify-content-end ">
+                        <div class="row">
+                            <li class="hotline col-lg-6 text-right">
+                                <a href="tel:0123456789"> 0123456789
+
+                                </a>
+                                <span>Tổng đài đặt hàng</span>
+                            </li>
+                            <li class="news col-lg-6">
+                                <a href="#">
+                                    Kinh nghiệm hay
+                                </a>
+                                <span>
+                                    Khuyến mãi
+                                </span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                <ul class=" news__items shadow">
+                                    <li>
+                                        <a href="">Tư vấn</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Khuyến mãi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__main-list">
+                    <ul class="header__main-list-items d-flex justify-content-lg-start">
+                        <li class="menu-item-has-children current">
+                            <a href="bang-tai.html">
+                                <img src="Assets/img/conveyor-1-36x36.png" alt="" class="menu-img">
+                                <span>Băng tải</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="bang-chuyen.html">
+                                <img src="Assets/img/delivery-36x36.png" alt="" class="menu-img">
+                                <span>Băng chuyền</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="he-thong-bang-tai.html">
+                                <img src="Assets/img/conveyor-belt-36x36.png" alt="" class="menu-img">
+                                <span>Hệ thống băng tải</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="gia-cong-co-khi.html">
+                                <i class="fas fa-wrench"></i>
+                                <span>Gia công cơ khí chính xác</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="">Băng tải PVC</a></li>
+                                <li class="menu-item"><a href="">Băng tải Tự động</a></li>
+                                <li class="menu-item"><a href="">Băng tải cong</a></li>
+                                <li class="menu-item"><a href="">Băng tải dây xích</a></li>
+                                <li class="menu-item"><a href="">Băng tải gân</a></li>
+                                <li class="menu-item"><a href="">Băng tải sấy</a></li>
+                                <li class="menu-item"><a href="">Băng tải nghiêng</a></li>
+                                <li class="menu-item"><a href="">Băng tải con lăn</a></li>
+                                <li class="menu-item"><a href="">Băng tải pu</a></li>
+                                <li class="menu-item"><a href="">Băng tải công nghiệp</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="du-an.html">
+                                <img src="Assets/img/conveyor-1-36x36.png" alt="" class="menu-img">
+                                <span>Dự án</span>
+                            </a>
+                            <ul class="sub-menu">                             
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main" >
+        <div class="content">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
+                        <p>
+                            <a href="index.html"><i class="fas fa-home"></i>Trang chủ</a>
+                            <span class="separator"> / </span>
+                            <a href="">Tin tức</a>
+                            <span class="separator"> / </span>
+                            <span class="last">CẢNH BÁO : HÀNG GIÁ RẺ</span>
+                        </p>
+                    </nav>
+                </div>
+                <div class="box__news">
+                    <div class="row">
+                        <div class="col-lg-9 col-12">
+                            <h1 class="box__news-title">Cảnh Báo : Hàng Giá Rẻ</h1>
+                            <div class="box__news-content">
+                                <div class="box__news-content-detail">
+                                    <div class="header-news content-detail">
+                                        <strong>ĐỪNG VỘI MUA BĂNG TẢI GIÁ RẺ</strong>
+                                    </div>
+                                    <div class="img-news content-detail">
+                                        <img src="Assets/img/product-img/new-update-pro3.jpg" alt="">
+                                    </div>
+                                    <div class="content-detail mt-3 mb-3">
+                                        <p>
+                                            Có không ít đơn vị sản xuất vì nguồn vốn nhỏ nên sẽ lưỡng lự khi đầu tư một
+                                            hệ thống băng tải hoàn chỉnh. Do đó, họ tìm đến với những nơi cung cấp băng
+                                            tải công nghiệp giá rẻ. Nhưng, những chiếc băng tải này liệu có đảm bảo an
+                                            toàn hay không? Nên hay không nên sử dụng những chiếc băng tải này?
+                                        </p><br>
+                                        <p>
+                                            Chúng tôi xin được liệt kê những rủi ro thường gặp phải khi bạn đầu tư băng
+                                            tải giá rẻ như sau:
+                                        </p>
+                                        <p>
+                                            – Thứ nhất: Băng tải đã qua sử dụng, băng tải không rõ nguồn gốc xuất sứ
+                                            thường được giao bán với giá thành rất rẻ. Tuy nhiên, đối với những loại
+                                            băng tải này lại thường không có chế độ bảo hành. -> Vậy nên, khi máy gặp
+                                            trục trặc bạn sẽ không có đội ngũ kỹ thuật viên hỗ trợ mà phải tự thuê
+                                            ngoài. Như vậy, chi phí phải bỏ ra để sửa chữa là rất lớn. Thậm chí là chỉ
+                                            sau vài lần sửa như vậy thì số tiền bạn bỏ ra cũng đủ để lắp đặt một hệ
+                                            thống băng tải hoàn toàn mới rồi.
+                                        </p> <br>
+                                        <p>
+                                            – Thứ hai phải nói đến chính là an toàn trong lao động. Những dây chuyền máy
+                                            móc công nghiệp đúng là mang đến rất nhiều lớn ích trong sản xuất cũng như
+                                            kinh doanh. Nhưng, bên cạnh đó, nếu những động cơ bên trong không được đảm
+                                            bảo sẽ gây ra những tai nạn cho người sử dụng. Mà những sản phẩm băng tải đã
+                                            qua sử dụng thì thường các bộ phận, động cơ bên trong đã xuống cấp và chắc
+                                            chắn là sẽ không đảm bảo được sự an toàn. Hơn nữa, đối với những sản phẩm
+                                            như vậy sẽ rất khó để tìm được linh phụ kiện thay thế khi máy có trục trặc.
+                                        </p> <br>
+                                        <p>
+                                            – Thứ ba phải nói đến chính là năng suất. Những băng tải đã qua sử dụng, đã
+                                            xuống cấp sẽ không đảm bảo được tính chính xác, làm ra những sản phẩm sai
+                                            lệch, gây tốn kém nguồn nguyên vật liệu. còn đối với băng tải, việc hỏng hóc
+                                            quá nhiều sẽ làm chậm tiến độ hoạt động, ảnh hưởng đến năng suất và doanh
+                                            thu.
+                                        </p> <br>
+                                        <p>
+                                            Tuy rằng, cũng có rất nhiều người may mắn tìm mua được những sản phẩm băng
+                                            tải công nghiệp giá rẻ mà vẫn có thể hoạt động tốt. Nhưng đấy chỉ là số ít.
+                                            Còn bạn không ai có thể đảm bảo được. Vậy nên, với những thông tin mà chúng
+                                            tôi chia sẻ bên trên, hy vọng rằng bạn sẽ có được quyết định chính xác nhất
+                                            cho doanh nghiệp của mình.
+                                        </p> <br>
+                                        <p>
+                                            Nếu bạn vẫn chưa lựa chọn được một nhà cung cấp băng tải uy tín, hãy yên tâm
+                                            đến với COSMO VINA – Đơn vị cung cấp băng tải uy tín hàng đầu Việt Nam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-BE">
+                                <img src="Assets/img/product-img/news-BE.PNG" alt="">
+                            </div>
+                            <div class="related__news">
+                                <div class="news__section-list">
+                                    <div class="row">
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="news__section-item position-relative">
+                                                <a href="">
+                                                    <div class="news__section-img">
+                                                        <img src="Assets/img/product-img/new-update-pro5.jpg" alt="">
+                                                    </div>
+                                                    <h4>Hướng dẫn phương pháp dán nối băng tải cao su</h4>
+                                                    <div class="is_divider d-lg-block d-none"></div>
+                                                    <div class="news__section-content">Do đặc điểm của từng ngành công
+                                                        nghiệp và nhà xưởng,
+                                                        băng tải cao su được thiết kế khác nhau để phù...</div>
+                                                    <div class="news__section-timer">
+                                                        <span class="day">03</span>
+                                                        <span class="month">Th3</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="news__section-item position-relative">
+                                                <a href="">
+                                                    <div class="news__section-img">
+                                                        <img src="Assets/img/product-img/new-update-pro5.jpg" alt="">
+                                                    </div>
+                                                    <h4>Hướng dẫn phương pháp dán nối băng tải cao su</h4>
+                                                    <div class="is_divider"></div>
+                                                    <div class="news__section-content">Do đặc điểm của từng ngành công
+                                                        nghiệp và nhà xưởng,
+                                                        băng tải cao su được thiết kế khác nhau để phù...</div>
+                                                    <div class="news__section-timer">
+                                                        <span class="day">03</span>
+                                                        <span class="month">Th3</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="news__section-item position-relative">
+                                                <a href="">
+                                                    <div class="news__section-img">
+                                                        <img src="Assets/img/product-img/new-update-pro5.jpg" alt="">
+                                                    </div>
+                                                    <h4>Hướng dẫn phương pháp dán nối băng tải cao su</h4>
+                                                    <div class="is_divider"></div>
+                                                    <div class="news__section-content">Do đặc điểm của từng ngành công
+                                                        nghiệp và nhà xưởng,
+                                                        băng tải cao su được thiết kế khác nhau để phù...</div>
+                                                    <div class="news__section-timer">
+                                                        <span class="day">03</span>
+                                                        <span class="month">Th3</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="news__section-item position-relative">
+                                                <a href="">
+                                                    <div class="news__section-img">
+                                                        <img src="Assets/img/product-img/new-update-pro5.jpg" alt="">
+                                                    </div>
+                                                    <h4>Hướng dẫn phương pháp dán nối băng tải cao su</h4>
+                                                    <div class="is_divider"></div>
+                                                    <div class="news__section-content">Do đặc điểm của từng ngành công
+                                                        nghiệp và nhà xưởng,
+                                                        băng tải cao su được thiết kế khác nhau để phù...</div>
+                                                    <div class="news__section-timer">
+                                                        <span class="day">03</span>
+                                                        <span class="month">Th3</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <section class="section-5 mt-5">
+                    <div class="partner__support">
+                        <div class="partner__support-list d-lg-flex">
+
+                            <div class="partner__support-item">
+                                <span>
+                                    <img src="Assets/img/icon1.png" alt="">
+                                    Hỗ trợ vận chuyển
+                                </span>
+                            </div>
+                            <div class="partner__support-item">
+                                <span>
+                                    <img src="Assets/img/icon2.png" alt="">
+                                    Hỗ trợ 24/7
+                                </span>
+                            </div>
+                            <div class="partner__support-item">
+                                <span>
+                                    <img src="Assets/img/icon3.png" alt="">
+                                    Thanh toán bảo mật
+                                </span>
+                            </div>
+                            <div class="partner__support-item partner__large">
+                                <span>
+                                    <img src="Assets/img/icon4.png" alt="">
+                                </span>
+                                <span>
+                                    <p> Đăng ký tư vấn từ Mosco</p>
+                                    <div class="phone-support">
+                                        <form action="">
+                                            <input type="text" placeholder="Nhập số diện thoại">
+                                            <button type="submit">Đăng ký</button>
+                                        </form>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="secction-6 brand__slider mt-2">
+                    <div class="brand__slider-heading">
+                        <h2 class="heading-title">
+                            <b></b>
+                            <span>đối tác chiến lược</span>
+                            <b></b>
+                        </h2>
+                        <p class="title-bt">“Uy tín - Chất lượng - Giá trị – Đóng góp vào thành công của khách hàng”</p>
+
+                    </div>
+
+
+                    <div class="brand__partner">
+
+                        <div class="partner__slider-list owl-carousel owl-theme" id="partner_slider">
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/0068783ff13e02605b2f.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/22c5c8716d0f9e51c71e-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/4e41daf57f8b8cd5d59a-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/56d7ac63091dfa43a30c-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="partner__slider-item">
+                                <a href="">
+                                    <img src="Assets/img/partner-img/6420809325edd6b38ffc-scaled-300x300.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="about-us col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-star"></i>
+                                Về chúng tôi
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <ul>
+                                <li><a href="">Giới thiệu công ty</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                                <li><a href="">Hướng dẫn mua hàng và thanh toán</a></li>
+                                <li><a href="">Bản đồ chỉ đường</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="support col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-user"></i>
+                                Hỗ trợ khách hàng
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <p>
+                                <strong>
+                                    Hotline:
+                                    <a href="">0932 488 998</a>
+                                </strong>
+                                (1000đ/phút, 7h30 ÷ 21h30 kể cả T7, CN) <br>
+                                Đặt hàng : <a href="mailto:sales@cosmovina.com.vn">sales@cosmovina.com.vn</a>
+                            </p>
+                            <p>
+                                <strong>
+                                    Trung tâm CSKH: <a href="tel:0932 488 998">0932 488 998</a>
+                                </strong>
+                                (1000đ/phút, 24h / 7 ngày) <br>
+                                Hỗ trợ: <a href="mailto:sales@cosmovina.com.vn">sales@cosmovina.com.vn</a> <br>
+                                Phản ánh: <a href="mailto:cskh@cosmovia.com.vn">cskh@cosmovia.com.vn</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="payment col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-check"></i>
+                                Hỗ trợ thanh toán
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/visa.svg"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/mastercard.svg"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/jcb.svg"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/2020/04/vnpay.png"
+                                        alt="Thanh toán bằng thẻ Visa" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/internet-banking.svg"
+                                        alt="Thanh toán chuyển khoản internet banking" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/cash.svg"
+                                        alt="Thanh toán tiền mặt" width="54" height="33">
+                                </div>
+                            </figure>
+                            <figure class="method-payment">
+                                <div class="payment-icon">
+                                    <img src="https://www.beplephan.com/wp-content/uploads/installment.svg"
+                                        alt="Hỗ trợ trả góp 0%" width="54" height="33">
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="social col-lg-3 col-md-6 col-12">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fab fa-facebook-f"></i>
+                                Kết nối với chúng tôi
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-social">
+                                <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-tumblr"></i></a>
+                                <a href=""><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                                <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-3">
+                <div class="row">
+                    <div class="col-lg-7 col-12 address-ft">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Địa chỉ
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <p>
+                                <strong>
+                                    ® HEAD OFFICE:
+                                </strong>
+                                Số 06, Phố An Sinh, P.Cổ Nhuế 1, Q.Bắc Từ Liêm, Hà Nội, Việt Nam.
+                                <br>
+                                <strong style="color: #ff0000;">
+                                    ☎ Hotline: <a href="tel:0123456789">0123456789</a>
+                                </strong>
+                            </p>
+                            <p>
+                                <strong>
+                                    ® NHÀ XƯỞNG:
+                                </strong>
+                                Khu nghiên cứu và Triển khai công nghệ Cổ Nhuế, P.Cổ Nhuế 2, Q.Bắc Từ Liêm, Hà nội.
+                                <br>
+                                <strong>
+                                    ☎ Hotline: <a href="tel:0123456789">0123456789</a>
+                                </strong>
+                            </p>
+                            <p>&nbsp;</p>
+
+                            <p>
+                                <em>Cosmo nhận đặt hàng trực tuyến và giao hàng tận nơi cho khách hàng</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 maintain-ft">
+                        <div class="footer-title">
+                            <h2>
+                                <i class="fas fa-map-marker-alt"></i>
+                                ĐỊA CHỈ GỬI HÀNG ĐỔI TRẢ & BẢO HÀNH
+                            </h2>
+                        </div>
+                        <div class="footer-content">
+                            <p>Khách hàng có thể gửi sản phẩm bảo hành, đổi trả về địa chỉ văn phòng của COSMO tại Hà
+                                Nội hoặc giao, nhận trực tiếp tại văn phòng đối tác của chúng tôi chỉ định. Quý khách
+                                vui lòng gọi điện trước khi gửi để tránh thất lạc hàng hóa.</p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <em>(Đăng ký tư vấn hoặc liên hệ&nbsp;<span><strong>Trung tâm bảo
+                                            hành &amp; CSKH: <a
+                                                href="tel:02466886686">0246-688-6686</a>&nbsp;</strong></span>để được hỗ
+                                    trợ thêm).</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coppy__right">
+                <div class="row">
+                    <div class="coppy__right-item-left col-lg-10 col-md-10 col-8">
+                        <div class="coppy__right-content">
+                            <p>
+                                <strong>Copyright 2020 ©&nbsp;<a href="">Cosmo Viet Nam Co., Ltd</a></strong>
+                            </p>
+                            <p class="d-xs-none">Giấy phép đăng ký kinh doanh số 0105 993 066 do sở KHĐT TP Hà Nội cấp
+                                ngày 18/9/2012</p>
+                        </div>
+                    </div>
+                    <div class="coppy__right-item-img col-lg-2 col-md-2 col-4 d-none d-lg-block">
+                        <img src="Assets/img/partner-img/logoSaleNoti-300x114-1-220x84-1.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="support-fix">
+        <ul>
+            <li class="support-fix__home">
+                <a href="">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/home.svg" alt="">
+                </a>
+                <span>Trang chủ</span>
+            </li>
+
+            <li class="support-fix__phone modal-toggle">
+                <a href="" data-toggle="modal" data-target="#myModal">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/call.png" alt="">
+                </a>
+                <span style="color: #ff0000;">
+                    Hotline:0123456789
+                </span>
+            </li>
+            <li class="support-fix__zalo">
+                <a href="">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/zalo.png" alt="">
+                </a>
+                <span>Tư vấn qua Zalo</span>
+            </li>
+            <li class="support-fix__fb">
+                <a href="">
+                    <img src="https://cosmovina.com.vn/wp-content/themes/themenamewoos/images/mes.png" alt="">
+                </a>
+                <span>Tư vấn qua Facebook</span>
+            </li>
+        </ul>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        Hãy gọi ngay cho Cosmo để đặt hàng và nhận những tư vấn tốt nhất về sản phẩm và dịch vụ
+                    </p>
+                    <a href="tel:0123456789" class="text-center d-block font-weight-bold">0123456789</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <span>▲</span>
+    </div>
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/owl.carousel.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/index.js"></script>
+</body>
+
+</html>
